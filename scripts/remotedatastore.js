@@ -53,7 +53,7 @@
       cache:'false',
       success:function(a){
         var myid = a[0].id;
-        $.ajax("http://localhost:2403/coffeeorders"+myid,{type: 'DELETE'}); //this.serverURL does not work
+        $.ajax("http://localhost:2403/coffeeorders/"+myid,{type: 'DELETE'}); //this.serverURL does not work
         console.log(myid);
       },
     });
